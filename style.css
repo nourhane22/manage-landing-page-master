@@ -1,0 +1,250 @@
+@import url(https://fonts.google.com/specimen/Be+Vietnam+Pro);
+
+:root{
+    ---Primary-color-red :hsl(12, 88%, 59%);
+    ---Primary-color-dark-blue :hsl(228, 39%, 23%);
+    ---Neutral-color-Dark-Grayish-Blue :hsl(227, 12%, 61%);
+    ---Neutral-color-Very-Dark-Blue: hsl(233, 12%, 13%);
+    ---Neutral-color-Very-Pale-Red: hsl(13, 100%, 96%);
+    ---Neutral-color-Very-Light-Gray: hsl(0, 0%, 98%);
+    ---Font-size: 16px;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.logo{
+    padding: 12px 0px;
+}
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 20px ;  
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(---Primary-color-dark-blue);
+    font-weight: 500;
+}
+
+.nav a:hover{
+    color:var(---Neutral-color-Very-Light-Gray);
+}
+
+.btn{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: var(---Primary-color-red);
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 2px 8px 12px var(---Primary-color-red);
+}
+
+/* hero section */
+
+.contain{
+    width: 100%;
+    height: 110vh;
+    top: 0;
+    background-image: url(Images/bg-tablet-pattern.svg);
+    background-position: top -60px right -100px;
+    background-repeat: no-repeat;
+}
+
+.hero-section{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.hero-text{
+    text-align:left;
+}
+
+.h1{
+    color: var(---Primary-color-dark-blue);
+    font-weight: 900;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.p1{
+    color: var(---Neutral-color-Dark-Grayish-Blue);
+    padding: 20px 10px;
+
+}
+
+.buttom-get-started{
+    padding: 20px 10px;
+}
+/* 3and section  */
+
+.btne{
+    padding: 10px 30px;
+    background-color: var(---Primary-color-red);
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.h2{
+    color: var(---Primary-color-dark-blue);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+
+}
+p,
+.p2{
+    color: var(---Neutral-color-Dark-Grayish-Blue);
+    padding: 15px 10px;
+    font-size: 15px; 
+    line-height: 1.2rem;
+}
+
+.about{
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+.type{
+    display: flex;
+
+}
+
+/* 4th section */
+.said{
+    
+    width: 100%;
+    height: 150vh;
+    top: 0;
+    background-image: url(Images/bg-tablet-pattern.svg);
+    background-position: top 300px left -400px ;
+    background-repeat: no-repeat; 
+}
+
+.h3{
+    color: var(---Primary-color-dark-blue);
+    font-weight: 700;
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card{
+    padding-top: 15px;
+    background-color: var(---Neutral-color-Very-Light-Gray);
+    width: 30%;
+    border-radius: 30px;
+    text-align: center;
+    
+}
+
+.card-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-logo{
+    width: 20%;
+}
+h2{
+    color: var(---Primary-color-dark-blue);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 8px;
+}
+.buttom-get{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+/* 5th section */
+.end{
+    width: 100%;
+    max-height: 30vh;
+    background-color: var(---Primary-color-red);
+    background-image: url(images/bg-simplify-section-desktop.svg);
+   
+}
+
+.last-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    
+}
+.h4{
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+   
+    
+}   
+
+.btna{
+   
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    color:var(---Primary-color-red);
+    font-size: 14px;
+    font-weight: 600;
+    
+
+}
+
+/* 6th section */
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: var(---Neutral-color-Very-Dark-Blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ul2{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo-brand{
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+
