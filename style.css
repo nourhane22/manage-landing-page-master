@@ -16,15 +16,33 @@
 }
 
 .nav-bar{
-    display: flex;
+  display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
-}
-.logo{
-    padding: 12px 0px;
+    padding: 12px 34px; 
+    
 }
 
+.logo{
+    padding: 12px 0px;
+   
+}
+.btn{
+display: none;
+    /* width: 100%;
+    padding: 10px 30px;
+    background-color: var(---Primary-color-red);
+    border-radius: 20px;
+border: none;
+color: #fff;
+font-size: 14px;
+font-weight: 600;
+box-shadow: 2px 8px 12px var(---Primary-color-red); */
+    
+}
+.nav{
+    display: none;
+}
 ul{
     list-style-type: none;
     text-decoration: none;
@@ -43,23 +61,16 @@ a{
     color:var(---Neutral-color-Very-Light-Gray);
 }
 
-.btn{
-    width: 100%;
-    padding: 10px 30px;
-    background-color: var(---Primary-color-red);
-    border-radius: 20px;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    box-shadow: 2px 8px 12px var(---Primary-color-red);
-}
+
 
 /* hero section */
-
+body{
+    max-width: 100%;
+    height: auto;
+}
 .contain{
     width: 100%;
-    height: 110vh;
+    height: auto;
     top: 0;
     background-image: url(Images/bg-tablet-pattern.svg);
     background-position: top -60px right -100px;
@@ -67,33 +78,48 @@ a{
 }
 
 .hero-section{
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     align-items: center;
-    gap: 300px;
+    gap: 20px;
 }
 
 .hero-text{
-    text-align:left;
+    text-align:center;
+}
+.svg{
+
+    width: 90%;
 }
 
 .h1{
     color: var(---Primary-color-dark-blue);
     font-weight: 900;
-    font-size: 50px;
+    font-size: 45px;
     padding: 10px;
+    text-align: center;
 }
+
+
 
 .p1{
     color: var(---Neutral-color-Dark-Grayish-Blue);
     padding: 20px 10px;
+    font-size: 20px;
+    text-align: center;
 
 }
 
-.buttom-get-started{
+/* .buttom-get-started{
     padding: 20px 10px;
+    transition: 0.3s ease-in;
+    position: relative;
 }
+
+.buttom-get-started :hover{
+    cursor: pointer;
+} */
 /* 3and section  */
 
 .btne{
@@ -110,8 +136,9 @@ a{
 .h2{
     color: var(---Primary-color-dark-blue);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
+   
 
 }
 p,
@@ -120,12 +147,16 @@ p,
     padding: 15px 10px;
     font-size: 15px; 
     line-height: 1.2rem;
+   
 }
+ 
+
 
 .about{
     padding: 50px 50px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
+  
 }
 
 
@@ -139,7 +170,7 @@ p,
 .said{
     
     width: 100%;
-    height: 150vh;
+    height: auto;
     top: 0;
     background-image: url(Images/bg-tablet-pattern.svg);
     background-position: top 300px left -400px ;
@@ -157,17 +188,18 @@ p,
 .card{
     padding-top: 15px;
     background-color: var(---Neutral-color-Very-Light-Gray);
-    width: 30%;
+    width: 80%;
     border-radius: 30px;
     text-align: center;
     
 }
 
 .card-con{
-    display: flex;
+   display: flex;
+   flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 20px; 
 }
 
 .img-logo{
@@ -189,29 +221,28 @@ h2{
 /* 5th section */
 .end{
     width: 100%;
-    max-height: 30vh;
+    max-height: auto;
     background-color: var(---Primary-color-red);
     background-image: url(images/bg-simplify-section-desktop.svg);
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.last-text{
+    width: 100%;
+    padding: 30px;
 }
 
-.last-text{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px;
-    
-}
 .h4{
     color: #fff;
     font-weight: 700;
     font-size: 35px;
-   
+   padding-bottom: 20px;
     
 }   
 
 .btna{
-   
     padding: 20px 40px;
     background-color: #fff;
     border-radius: 30px;
@@ -225,26 +256,95 @@ h2{
 
 /* 6th section */
 .footer{
-    width: 100%;
-    height: 50vh;
     background-color: var(---Neutral-color-Very-Dark-Blue);
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-
-.ul2{
-    list-style-type: none;
-    text-decoration: none;
+.nav-text{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+   gap: 100px;
 }
-
-
+.ul2{
+    color: #fff;
+    font-weight: 500;
+    font-style: normal; 
+}
 .logo-brand{
     display: flex;
-    gap: 20px;
-    padding-top: 50px;
+    gap: 40px;
+    width: 100%;
+    margin: 20px;
 }
 
+.logo2{
+    width: 80%;
+    margin: 20px 30px;
+    
+}
+@media (min-width: 50em){
+  /*   .btn{
+        display: contents;
+    
+    } */
+
+    .btn{
+        display:inline;
+        width: 100%;
+        padding: 10px 30px;
+        background-color: var(---Primary-color-red);
+        border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 2px 8px 12px var(---Primary-color-red);
+    }
+    .nav{
+     display: contents;
+    }
+    .hamburger-logo{
+        display: none;
+    }
+     .hero-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hero-text{
+        text-align:left;
+    }
+    .h1{
+        text-align: left;
+    }
+    
+    .p1{
+        text-align: left;
+    
+    }
+    .about{
+        grid-template-columns: repeat(2,1fr);
+      
+    }
+    .card-con{
+       flex-direction: row;
+     }
+     
+    .end{
+        justify-content: space-between;
+      
+    }
+    .last-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer{   
+        flex-direction:row;
+        justify-content: space-around;
+    }
+
+ }
 
