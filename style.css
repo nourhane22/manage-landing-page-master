@@ -69,7 +69,7 @@ body{
 }
 
 .hero-section{
-    padding: 50px 20px;
+    padding: 60px 40px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     align-items: center;
